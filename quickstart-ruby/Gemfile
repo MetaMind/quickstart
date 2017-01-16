@@ -1,0 +1,4 @@
+source 'https://rubygems.org'
+gem 'jwt'
+gem 'json'
+gem 'rest-client', '~> 1.8'
