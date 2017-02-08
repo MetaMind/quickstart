@@ -1,0 +1,30 @@
+{
+  "name": "Predictive Vision Service demo",
+  "description": "Image Classification with Salesforce's Predictive Vision APIs in Java",
+  "keywords": [
+    "java",
+    "AI",
+    "APIs",
+    "deep learning",
+    "image classification",
+    "predictive vision service",
+    "salesforce"
+  ],
+  "website": "http://metamind.io",
+  "repository": "https://github.com/MetaMind/quickstart/tree/master/quickstart-java",
+  "logo": "http://image-identifier.herokuapp.com/static/EinsteinAtom.png",
+  "success_url": "/home",
+  "scripts": {
+    "postdeploy": "mvn clean install"
+  },
+  "env": {
+    "PREDICTIVE_VISION_MODEL_ID": {
+      "description": "Custom Predictive Vision Service Model ID. Defaults to the General Image Classifier",
+      "required": false
+    }
+  },
+  "image": "heroku/java",
+  "addons": [
+    "predictive-services"
+  ]
+}

@@ -1,0 +1,12 @@
+## Sample Java App
+
+<!--[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)-->
+### Running on Heroku
+When the add-on is installed on Heroku, `PREDICTIVE_SERVICES_ACCOUNT_ID`, `PREDICTIVE_SERVICES_PRIVATE_KEY` and `PREDICTIVE_SERVICES_URL` variables are set in the environment.
+####Run the app
+mvn test
+
+### Running outside Heroku
+If you have private key outside heroku, use it as shown below
+####Run the app
+mvn test "-Dexec.args=<email/accountId> </path/to/private key>"
