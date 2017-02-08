@@ -9,4 +9,4 @@ mvn test
 ### Running outside Heroku
 If you have private key outside heroku, use it as shown below
 ####Run the app
-mvn test "-Dexec.args=<email/accountId> </path/to/private key>"
+mvn test "-Dexec.args=`<email/accountId>` `</path/to/private key>`"
