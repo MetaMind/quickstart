@@ -4,10 +4,10 @@ require './predict'
 require 'json'
 
 if __FILE__ == $0
-  accId = ENV['PREDICTIVE_SERVICES_ACCOUNT_ID']
+  accId = ENV['EINSTEIN_VISION_ACCOUNT_ID']
 
   # Remove all '\n' and add newline
-  privKey = String.new(ENV['PREDICTIVE_SERVICES_PRIVATE_KEY'])
+  privKey = String.new(ENV['EINSTEIN_VISION_PRIVATE_KEY'])
   privKey.gsub!('\n', "\n")
   exp = Time.now.to_i + (60 * 15)
 

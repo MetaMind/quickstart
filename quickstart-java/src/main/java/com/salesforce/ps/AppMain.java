@@ -14,9 +14,9 @@ public class AppMain {
 
     // For Heroku users
     Optional<String> accountIdOpt = Optional
-        .ofNullable(System.getenv("PREDICTIVE_SERVICES_ACCOUNT_ID"));
+        .ofNullable(System.getenv("EINSTEIN_VISION_ACCOUNT_ID"));
     Optional<String> privateKeyContentOpt = Optional
-        .ofNullable(System.getenv("PREDICTIVE_SERVICES_PRIVATE_KEY"));
+        .ofNullable(System.getenv("EINSTEIN_VISION_PRIVATE_KEY"));
 
     String email;
     String privateKey;

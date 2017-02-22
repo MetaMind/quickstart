@@ -10,7 +10,7 @@ import org.glassfish.jersey.media.multipart.MultiPartFeature;
 
 public abstract class Request {
 
-  protected final String PREICTIVE_SERVICES_URL = "https://api.metamind.io";
+  protected final String EINSTEIN_VISION_URL = "https://api.metamind.io";
   private final String token;
   protected final Client client = ClientBuilder
       .newBuilder()
