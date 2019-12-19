@@ -11,7 +11,7 @@ def generate_token(assertion):
     Returns:
         An oauth token generated using the assertion.
     """
-    url = EINSTEIN_VISION_URL+"/v1/oauth2/token"
+    url = EINSTEIN_VISION_URL+"/v2/oauth2/token"
     data = {
         "grant_type" : "urn:ietf:params:oauth:grant-type:jwt-bearer", 
         "assertion" : assertion
