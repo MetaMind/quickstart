@@ -8,7 +8,7 @@ _FILE_TYPES = {
     'jpeg': 'image/jpeg'
 }
 
-_PREDICTION_URL = EINSTEIN_VISION_URL+"/v1/vision/predict"
+_PREDICTION_URL = EINSTEIN_VISION_URL+"/v2/vision/predict"
 
 
 def predict_with_url(token, model_id, image_url):
