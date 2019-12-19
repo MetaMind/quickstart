@@ -26,7 +26,7 @@ public class AssertionGenerator {
     PrivateKey privateKey = getPrivateKey(privateKeyBase64);
     final JwtClaims claims = new JwtClaims();
     claims.setSubject(email);
-    claims.setAudience("https://api.einstein.ai/v1/oauth2/token");
+    claims.setAudience("https://api.einstein.ai/v2/oauth2/token");
     claims.setExpirationTimeMinutesInTheFuture(expiryInSeconds / 60);
     claims.setIssuedAtToNow();
 
