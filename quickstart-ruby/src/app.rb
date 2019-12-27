@@ -25,7 +25,7 @@ if __FILE__ == $0
   prediction_response = JSON.parse(
       PredictHelper.predict(access_token,
                             "GeneralImageClassifier",
-                            "http://dgicdplf3pvka.cloudfront.net/images/dogbreeds/large/Siberian-Husky.jpg"))
+                            "https://dgicdplf3pvka.cloudfront.net/images/dogbreeds/large/Siberian-Husky.jpg"))
 
   puts "\nPrediction response:\n"
   puts JSON.pretty_generate(prediction_response)

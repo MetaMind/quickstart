@@ -12,7 +12,7 @@ def generate_assertion(subject, private_key, expiry):
     Returns:
         An assertion.
     """
-    url = EINSTEIN_VISION_URL+"/v1/oauth2/token"
+    url = EINSTEIN_VISION_URL+"/v2/oauth2/token"
     payload = {'sub': subject, 'aud': url, 'exp': expiry}
 
     try:

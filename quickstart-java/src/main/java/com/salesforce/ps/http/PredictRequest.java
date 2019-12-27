@@ -28,7 +28,7 @@ public class PredictRequest extends Request {
     contentType = Boundary.addBoundary(contentType);
     Entity<FormDataMultiPart> entity = Entity.entity(formPart, contentType);
 
-    Response response = client.target(EINSTEIN_VISION_URL + "/v1/vision/predict")
+    Response response = client.target(EINSTEIN_VISION_URL + "/v2/vision/predict")
         .request()
         .header("Authorization", "Bearer " + getToken())
         .post(entity);

@@ -22,7 +22,7 @@ public class AccessTokenRequest extends Request {
 
     Entity<Form> entity = Entity.form(form);
 
-    Response response = client.target(EINSTEIN_VISION_URL + "/v1/oauth2/token")
+    Response response = client.target(EINSTEIN_VISION_URL + "/v2/oauth2/token")
         .request()
         .post(entity);
 

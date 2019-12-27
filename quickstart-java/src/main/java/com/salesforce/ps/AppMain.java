@@ -47,7 +47,7 @@ public class AppMain {
 
     PredictRequest predictRequest = new PredictRequest(accessToken.getToken(),
         "GeneralImageClassifier",
-        "http://dgicdplf3pvka.cloudfront.net/images/dogbreeds/large/Siberian-Husky.jpg");
+        "https://dgicdplf3pvka.cloudfront.net/images/dogbreeds/large/Siberian-Husky.jpg");
 
     PredictResponse response = predictRequest.submit();
     System.out.println(response.getProbabilities());
