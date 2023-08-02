@@ -1,4 +1,5 @@
 <img src="https://einstein.ai/static/images/pages/home-einstein.svg" width="100px">
+
 # DEPRECATION NOTICE
 
 As of July 31, 2023 the Object Detection and Image Classification features of Einstein Vision and Language services have been deprecated and are no longer available.
